@@ -1,3 +1,3 @@
-#chatgpt ile test oyunu
+# chatgpt ile test oyunu
 
 # JS
