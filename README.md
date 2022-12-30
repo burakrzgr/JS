@@ -1,3 +1,2 @@
-# chatgpt ile test oyunu
-
+# chatgpt ile geliştirilen basit bir js oyunu
 # JS
