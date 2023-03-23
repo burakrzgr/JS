@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Define a style for the body element */
+        body {
+            /* Set the background color to light blue */
+            background-color: lightblue;
+            /* Set the text alignment to center */
+            text-align: center;
+        }
+
+        /* Define a style for the h1 element */
+        h1 {
+            /* Set the font family to Poppins */
+            font-family: Poppins;
+            /* Set the font size to 48 pixels */
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a h1 element to display the quote -->
+    <h1 id="quote"></h1>
+
+    <!-- Create a script element to run the JavaScript code -->
+    <script>
+        // Define an array of funny quotes
+        let quotes = [
+          "Don't let the fear of striking out keep you from playing the game. Unless it's dodgeball.",
+          "The only way to do great work is to love what you do. Or get paid a lot.",
+          "The journey of a thousand miles begins with a single step. And ends with a lot of blisters.",
+          "Be the change that you wish to see in the world. Or just complain about it on social media.",
+          "If you want to live a happy life, tie it to a goal, not to people or things. Unless it's lahmacun.",
+          "The most common way people give up their power is by thinking they don't have any. Or by forgetting their phone charger.",
+          "The secret of getting ahead is getting started. The secret of getting finished is knowing when to stop.",
+          "Believe you can and you're halfway there. Believe you can't and you're probably right.",
+          "You are never too old to set another goal or to dream a new dream. But you might be too old to achieve them.",
+          "You miss 100% of the shots you don't take. You also miss 99% of the shots you do take."
+        ];
+
+        // Create a random object
+        let random = Math.random();
+
+        // Generate a random index from 0 to the length of the array - 1
+        let index = Math.floor(random * quotes.length);
+
+        // Get the quote at the random index
+        let quote = quotes[index];
+
+        // Get the h1 element by its id
+        let h1 = document.getElementById("quote");
+
+        // Set its inner text to be equal to quote
+        h1.innerText = quote;
+    </script>
+</body>
+</html>
